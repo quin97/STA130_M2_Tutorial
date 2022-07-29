@@ -2,6 +2,7 @@
 title: "STA130H1S -- Fall 2022"
 subtitle: Week 2 Tutorial Handout
 output: pdf_document
+  
 ---
 
 ```{r setup, include=FALSE}
@@ -19,13 +20,15 @@ knitr::opts_chunk$set(warning=FALSE, message=FALSE)
 
 #### This Week's Vocab (15-20 min) :  
 
-- Where are the data centered (approximate values if available)
+- Where are the data centered/located (approximate values if available)
 
 - Mean, median, mode
 
-- How much spread (relative to what?)
+- How much spread? (relative to what?) How are they scaled?
 
-- Standard deviation, interquartile range (IQR)
+- Standard deviation, variance interquartile range (IQR), range
+
+- Higher order characteristics: shape/skewness/modality
 
 - Shape: symmetric, left-skewed, right-skewed
 
@@ -40,7 +43,13 @@ or category)
 
 - Different visualizations: bar graph, boxplot, histogram, scatterplot
 
-![A useful plot for measures of central tendency and skewness (from https://towardsdatascience.com/skewness-kurtosis-simplified-1338e094fc85)](mode_skewness.png)
+<center>
+
+![](mode_skewness.png)
+
+[\hspace{90pt}Left Skew\hspace{175pt}Right Skew](https://towardsdatascience.com/skewness-kurtosis-simplified-1338e094fc85)
+
+</center>
 
 #### Discussion (20 min) :  
 
@@ -82,11 +91,18 @@ p4<-ggplot(data = iris[iris$Sepal.Width > 3,], aes(x = Species)) +
 p1+p2+p3+p4
 ```
 
+\newpage
+
 **Discuss**: 
 
 What type of variable is displayed in the plot?
 
 (Quantitative/Categorical)
+ 
+
+![Types of Numeric Variables @allison_horst](EkoDNU6U0A.jpeg){width=50%}
+![Types of Categorical Variables @allison_horst](EkoCPz4VkAA.jpeg){width=50%}
+
 
 What type plot is used to visualize the variable?
 
@@ -108,7 +124,7 @@ What features of the variable can you see from the plot?
 
 #### Writing prompt (30 min) :  
 
-Pretend that you are on the phone with your friend, and you want to share some of the cool new data visualization techniques that you have been learning in STA130. Pick one of the above graphs and prepare a small paragraph on how you would describe the graph to your friend (keeping in mind that they cannot see the graph). Make sure you include at least 2 words/phrases from your vocabulary list. It is also important to keep in mind that the person you are talking to has not taken STA130, therefore they will not be as familiar with the statistical vocabulary as you are. Therefore, make sure the explain any terms you use in plain language.  
+Pretend that you are on the phone with your friend, and you want to share some of the cool new data visualization techniques that you have been learning in STA130. Pick one of the graphs and prepare a small paragraph on how you would describe the graph to your friend (keeping in mind that they cannot see the graph). Make sure you include at least 2 words/phrases from your vocabulary list. It is also important to keep in mind that the person you are talking to has not taken STA130, therefore they will not be as familiar with the statistical vocabulary as you are. Therefore, make sure the explain any terms you use in plain language.  
 
  
 
